@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "g_point_histories",
+  "info": {
+    "singularName": "g-point-history",
+    "pluralName": "g-point-histories",
+    "displayName": "GPointHistory",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Description": {
+      "type": "text"
+    },
+    "Amount": {
+      "type": "biginteger"
+    },
+    "UserId": {
+      "type": "integer"
+    }
+  }
+}

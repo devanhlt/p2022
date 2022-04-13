@@ -1,9 +1,9 @@
 'use strict';
 
 /**
- * discount service.
+ * bookmaster service.
  */
 
 const { createCoreService } = require('@strapi/strapi').factories;
 
-module.exports = createCoreService('api::discount.discount');
+module.exports = createCoreService('api::bookmaster.bookmaster');

@@ -4,7 +4,8 @@
   "info": {
     "singularName": "author",
     "pluralName": "authors",
-    "displayName": "Author"
+    "displayName": "Author",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -16,18 +17,6 @@
     },
     "Description": {
       "type": "string"
-    },
-    "Birthday": {
-      "type": "date"
-    },
-    "Dead": {
-      "type": "date"
-    },
-    "books": {
-      "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::book.book",
-      "inversedBy": "authors"
     }
   }
 }

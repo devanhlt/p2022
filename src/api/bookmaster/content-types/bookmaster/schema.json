@@ -1,0 +1,44 @@
+{
+  "kind": "collectionType",
+  "collectionName": "bookmasters",
+  "info": {
+    "singularName": "bookmaster",
+    "pluralName": "bookmasters",
+    "displayName": "Bookmaster",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "CoverPhoto": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "Description": {
+      "type": "text"
+    },
+    "Price": {
+      "type": "biginteger"
+    },
+    "ReleaseDate": {
+      "type": "date"
+    },
+    "authors": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::author.author"
+    }
+  }
+}

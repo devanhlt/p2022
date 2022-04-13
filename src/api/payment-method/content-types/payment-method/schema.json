@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "payment_methods",
+  "info": {
+    "singularName": "payment-method",
+    "pluralName": "payment-methods",
+    "displayName": "PaymentMethod",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string",
+      "required": true
+    },
+    "Description": {
+      "type": "text"
+    },
+    "Code": {
+      "type": "enumeration",
+      "enum": [
+        "bank",
+        "wallet",
+        "contact"
+      ],
+      "required": true,
+      "default": "bank"
+    }
+  }
+}

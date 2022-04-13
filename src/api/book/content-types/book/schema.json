@@ -12,17 +12,6 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "Name": {
-      "type": "string",
-      "required": true
-    },
-    "Description": {
-      "type": "text",
-      "required": false
-    },
-    "Price": {
-      "type": "biginteger"
-    },
     "SellPrice": {
       "type": "biginteger"
     },
@@ -35,22 +24,22 @@
         "videos"
       ]
     },
-    "RentPrice": {
-      "type": "biginteger"
+    "Available": {
+      "type": "boolean"
     },
-    "DisplayStatus": {
+    "UsableStatus": {
       "type": "enumeration",
       "enum": [
-        "SHOW",
-        "HIDE"
-      ],
-      "default": "SHOW"
+        "new",
+        "likenew",
+        "gooduse",
+        "old"
+      ]
     },
-    "authors": {
+    "bookmaster": {
       "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::author.author",
-      "inversedBy": "books"
+      "relation": "oneToOne",
+      "target": "api::bookmaster.bookmaster"
     }
   }
 }
