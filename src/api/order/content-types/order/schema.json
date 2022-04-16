@@ -12,10 +12,10 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "Amount": {
+    "CoverPriceAmount": {
       "type": "biginteger"
     },
-    "SellAmount": {
+    "TotalAmount": {
       "type": "biginteger"
     },
     "DiscountAmount": {
@@ -26,6 +26,29 @@
     },
     "UserId": {
       "type": "integer"
+    },
+    "PayStatus": {
+      "type": "enumeration",
+      "enum": [
+        "new",
+        "part_paid",
+        "paid",
+        "canceled"
+      ]
+    },
+    "PaidAmount": {
+      "type": "biginteger"
+    },
+    "Paids": {
+      "type": "json"
+    },
+    "ProcessStatus": {
+      "type": "enumeration",
+      "enum": [
+        "processing",
+        "shipping",
+        "delivered"
+      ]
     }
   }
 }
