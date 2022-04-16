@@ -21,8 +21,11 @@
     "DiscountAmount": {
       "type": "biginteger"
     },
+    "BookIds": {
+      "type": "json"
+    },
     "UserId": {
-      "type": "biginteger"
+      "type": "integer"
     }
   }
 }
