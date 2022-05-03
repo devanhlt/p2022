@@ -32,8 +32,7 @@
       "enum": [
         "new",
         "part_paid",
-        "paid",
-        "canceled"
+        "paid"
       ]
     },
     "PaidAmount": {
@@ -47,7 +46,8 @@
       "enum": [
         "processing",
         "shipping",
-        "delivered"
+        "delivered",
+        "canceled"
       ]
     }
   }
